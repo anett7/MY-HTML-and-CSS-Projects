@@ -78,6 +78,6 @@ transition: transform .5s ease-in-out;
 		background-image: url("../images/icons/icons2.png");
 		}
 	50% {
-		transorm: translateY(330px);
+		transform: translateY(330px);
 	}
 }
