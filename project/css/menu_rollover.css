@@ -35,7 +35,7 @@ body {
 	border: 1px solid #9D9FA2;
 	border-radius: 1.5px;
 	background-color: #387593;
-	coursor: pointer;
+	cursor: pointer;
 }
 .menu li:hover {
 	background-color: #5EAFDF;
@@ -53,13 +53,13 @@ body {
 .submenu {
 	padding: 0;
 	left: 0;
-	Position: absolute;
+	position: absolute;
 	top: 35px;
 	width: 127px;
 	opacity: 0;
 	/*while not being hovered, drop down-menu hides. 
 	This also avoide a block-level bug*/
-visibility: visible;
+visibility: hidden;/*hidden, otherwise, the submenu will appear if you hover in the space below the "portfolio" tab.*/
 }
 
 .submenu li {
@@ -74,4 +74,4 @@ visibility: visible;
 }
 /*margin-right: -3px for me as there were spacing between boxes, but in the instruction it was -2px;  ( in chrome there is still some)
 	top: 35px as space under portfolio box was too big, originally it was 43.5px; 
-	width: 127px as drop down was narrower, was 125.5px. */
+	width: 127px for me as drop down was narrower, in video it was 125.5px. */
