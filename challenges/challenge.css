@@ -1,0 +1,238 @@
+/*img start*/
+.container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: contrast(180%);
+    border-radius: 50%;
+}
+/*img end*/
+
+/*table start*/
+
+.table table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.table td {
+    text-align: left;
+    padding: 8px;
+}
+
+.table th {
+    background-color: rgb(181, 228, 237);
+    color:rgb(37, 101, 97);
+    padding: 8px;
+}
+th:hover {
+    background-color: rgb(100, 167, 181);}
+
+.table tr:nth-child(even){
+    background-color: rgb(13, 157, 76, 0.593);
+   
+}
+
+.table tr:nth-child(3){
+    background-color: rgb(130, 228, 245);
+
+}
+
+
+#empty {
+    background-color: white;
+    border-top: 1px solid white;
+    border-left: 1px solid white
+}
+
+/*table end*/
+
+
+/*text on image start*/
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size: 300%
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 70%;
+}
+
+/*text on image end*/
+
+ /*navbar start*/
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: lightskyblue;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*no line*/
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: rgb(124, 179, 230);
+    color: rgb(50, 60, 59);
+  }
+  
+  
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
+}
+    /*navbar end*/
+
+   /*column start*/
+
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  * {
+    box-sizing: border-box;
+  }
+    /*column end*/
+
+  
+
+  h2:hover {
+  background-color: lightskyblue;  
+}
+
+
+/*img fade overlay start*/
+.container2 {
+  position: relative;
+  width: 30%;
+  border: 3px solid #73AD21;
+  border-radius: 8px;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  background-color: #008bba52;
+  border-radius: 8px;
+}
+
+.container2:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: cursive;
+  font-size: 200%
+}
+
+/*img fade overlay end*/
+
+/*video container start*/
+
+.container3 {
+  position: relative;
+  width: 60%;
+  left: 30%;
+  border: 3px solid #73AD21;
+}
+
+.video_file {
+  display: block;
+  width: 100%;
+  height:100%
+
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  background-color: #008bba52;
+}
+
+.container3:hover .overlay2 {
+  opacity: 0.8;
+}
+
+.text2 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: cursive;
+  font-size: 200%;
+}
+
+
+/*video container end*/
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(rgba(126, 172, 205, 0.372));
+  }
+}
