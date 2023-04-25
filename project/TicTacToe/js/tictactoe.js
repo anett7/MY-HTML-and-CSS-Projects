@@ -13,11 +13,11 @@ function placeXorO (squareNumber) {
         //this condition checks who's turn it is.
         if (activePlayer === "X") {
             //if activePlayer is equal to "X", the x.png is placed in HTML
-            select.style.backgroundImage = 'url("images/x.png")';
+            select.style.backgroundImage = 'url("images/x.jpg")';
             //active player may only be "X" or "O" so, if not "X" it must be "O"
         } else {
             //if activePlayer is equal to "O", the o.png is placed in HTML
-            select.style.backgroundImage = 'url("images/o.png")';
+            select.style.backgroundImage = 'url("images/o.jpg")';
         }
         //squareNumber and active Player are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
@@ -129,7 +129,7 @@ function disableClick() {
     //this makes our body unclickable
     body.style.pointerEvents = "none";
     //this makes our body clickabel again after 1 second
-    setTimeout (function () {body.style.pointerEvens = 'auto';}, 1000);
+    setTimeout (function () {body.style.pointerEvents = 'auto';}, 1000);
 }
 //this function takes a string parameter of the path you set earlier for //placement sound ( './media/place.mp3')
 function audio (audioURL) {
