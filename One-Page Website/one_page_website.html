@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <title>Yourmats</title>
 <link rel="stylesheet" href="./css/one_page_website.css">
 <link rel="stylesheet" href="./css/one_page_animations.css">
+<script src="JS/one_page_website.js" defer></script> 
 </head>
 <body>
 <!--NAV-->
@@ -29,6 +30,8 @@
 </div>
 <!--END HOME-->
 <!--GALLERY-->
+
+
 <section id="GALLERY">
 	<div class="container">
 		<h1>Gallery</h1>
@@ -130,6 +133,114 @@
 </div>
 </div>
 </section>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./images/standard2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/indoor_logo1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/outdoor_plain1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/outdoor_logo1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+
+	<div class="column">
+		<img src="./images/coir1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  </div>
+
+	  <div class="column">
+		<img src="./images/coir_logo1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  </div>
+
+	  <div class="column">
+		<img src="./images/industrial1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  </div>
+  </div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 7</div>
+		<img src="./images/standard2.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 7</div>
+		<img src="./images/indoor_logo1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 7</div>
+		<img src="./images/outdoor_plain1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 7</div>
+		<img src="./images/outdoor_logo1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">5 / 7</div>
+		<img src="./images/coir1.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">6 / 7</div>
+		<img src="./images/coir_logo1.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">7 / 7</div>
+		<img src="./images/industrial1.jpg" style="width:100%">
+	  </div>
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./images/standard2.jpg" onclick="currentSlide(1)" alt="Standard">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/indoor_logo1.jpg" onclick="currentSlide(2)" alt="Logo">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/outdoor_plain1.jpg" onclick="currentSlide(3)" alt="Outdoor">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/outdoor_logo1.jpg" onclick="currentSlide(4)" alt="Outdoor logo">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/coir1.jpg" onclick="currentSlide(4)" alt="Coir">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/coir_logo1.jpg" onclick="currentSlide(4)" alt="Coir logo">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/industrial1.jpg" onclick="currentSlide(4)" alt="industrial">
+	  </div>
+
+	</div>
+  </div>
 <!--END GALLERY-->
 
 <!--RSVF-->
