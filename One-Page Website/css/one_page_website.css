@@ -484,6 +484,7 @@ MEDIA QUERIES
       
       img.demo {
         opacity: 0.6;
+        width: 100%;
       }
       
       .active,
