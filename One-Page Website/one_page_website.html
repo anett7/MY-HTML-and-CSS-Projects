@@ -8,6 +8,9 @@
 <script src="JS/one_page_website.js" defer></script> 
 </head>
 <body>
+	<script>
+		document.body.classList.add('fade-out');
+	</script>
 <!--NAV-->
 <div class="wrap">
 	<div class="menu-container">
@@ -34,7 +37,7 @@
 
 <section id="GALLERY">
 	<div class="container">
-		<h1>Gallery</h1>
+		<h1 style="font-size:3vw;">Gallery</h1>
 	<div class="flex-container">
 <!--PHOTO-CONTAINER 1-->
 <div class="photo-container">
@@ -233,11 +236,11 @@
 					
                 </p>
                 <div class="form-rsvp">
-                    <form action="" method="post">
-                        <input class="rsvp" type="text" value="" placeholder="First Name">
-                        <input class="rsvp" type="text" value="" placeholder="Last Name">
-                        <input class="rsvp" type="text" value="" placeholder="Email Address">
-                        <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                    <form name="myForm" action="/action_page.php" method="post" onsubmit="return validateForm()">
+                        <input name="fname1" class="rsvp" type="text" value="" placeholder="First Name">
+                        <input name="fname1"class="rsvp" type="text" value="" placeholder="Last Name">
+                        <input name="fname1" class="rsvp" type="text" value="" placeholder="Email Address">
+                        <input name="fname1"  class="rsvp" type="text" value="" placeholder="Phone Number">
                         <div class="form-spacer">
                             <label class="terms">Terms and Conditions</label>
                         </div>
@@ -258,6 +261,11 @@
 CONTACT INFORMATION:&nbsp;|&nbsp; tel:+44 1610..&nbsp;|&nbsp;email us:sales@yourmats.co.uk&nbsp;|&nbsp;www.yourmats.co.uk &nbsp;|&nbsp; &copy;2023
 </div>
 <!--END FOOTER-->
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('fade-out');
+});
+</script>
 </body>
 </html>
 

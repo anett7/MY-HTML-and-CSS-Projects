@@ -38,3 +38,12 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+
+function validateForm() {
+  let x = document.forms["myForm"]["fname1"].value;
+  if (x == "") {
+    alert("Please fill out the form before submitting!");
+    return false;
+  }
+}

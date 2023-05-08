@@ -15,6 +15,15 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
+    opacity: 1;
+  transition: 2s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+html {
+  background-color: grey;
 }
 
 footer, /*apply the style for more than one tag*/
