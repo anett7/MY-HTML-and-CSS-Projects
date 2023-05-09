@@ -41,9 +41,14 @@ function openModal() {
 
 
 function validateForm() {
-  let x = document.forms["myForm"]["fname1"].value;
-  if (x == "") {
+  let x = document.forms["myForm"]["fname"].value;
+  let y = document.forms["myForm"]["sname"].value;
+  let z = document.forms["myForm"]["mail"].value;
+  let v = document.forms["myForm"]["tel"].value;
+  if (x == "", y == "", z=="", v=="") {
     alert("Please fill out the form before submitting!");
     return false;
   }
 }
+
+
