@@ -8,9 +8,11 @@
 <script src="JS/one_page_website.js" defer></script> 
 </head>
 <body>
+	<!--fade in step 1-->
 	<script>
 		document.body.classList.add('fade-out');
 	</script>
+	<!--/fade in step 1-->
 <!--NAV-->
 <div class="wrap">
 	<div class="menu-container">
@@ -221,6 +223,13 @@
   </div>
 <!--END GALLERY-->
 
+
+
+
+
+
+
+
 <!--RSVF-->
 
 <section id="ENQUIRIES">
@@ -261,11 +270,33 @@
 CONTACT INFORMATION:&nbsp;|&nbsp; tel:+44 1610..&nbsp;|&nbsp;email us:sales@yourmats.co.uk&nbsp;|&nbsp;www.yourmats.co.uk &nbsp;|&nbsp; &copy;2023
 </div>
 <!--END FOOTER-->
+<!-- fade in/out step2 add js (plus step 3 to add in css)-->
 <script>
 	window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.remove('fade-out');
 });
+
 </script>
+<!-- /fade out-->
+
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Call request</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Request a call from us here:</h3>
+
+    <label for="email"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter your name" name="" required>
+
+    <label for="psw"><b>Phone Number</b></label>
+    <input type="password" placeholder="Enter your number" name="" required>
+
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
 </body>
 </html>
 
@@ -277,4 +308,3 @@ CONTACT INFORMATION:&nbsp;|&nbsp; tel:+44 1610..&nbsp;|&nbsp;email us:sales@your
 <iframe src="https://www.ukmatsdirect.co.uk">
 </iframe> 
 
---!>

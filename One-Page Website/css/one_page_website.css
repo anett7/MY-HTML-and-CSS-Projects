@@ -15,9 +15,15 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
-    opacity: 1;
+   
+}
+/* fade out function step 3 add css*/
+
+body {
+  opacity: 1;
   transition: 2s opacity;
 }
+
 body.fade-out {
   opacity: 0;
   transition: none;
@@ -26,6 +32,7 @@ html {
   background-color: grey;
 }
 
+/* end of fade out function*/
 footer, /*apply the style for more than one tag*/
  nav {
     display: block;/* each line is a block, we want display in blocklevel*/
@@ -368,7 +375,7 @@ FOOTER STYLES
     color: #000;
     text-shadow: 2px 2px 6px 0 rgba(0,0,0,0.4);
     padding: 20px 50px 20px 50px;
-    text-align: right;
+    text-align: center;
 
 }
 
@@ -508,3 +515,149 @@ MEDIA QUERIES
       .hover-shadow:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
+
+
+
+/*********************
+ contact form pop up start
+ ****************************/
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  color: white; 
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  opacity: 0.8;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0px 3%;
+  padding: 7px 0px;
+  width: 200px;
+  font-size: 18px;
+  transition: border-color 0.3s color 0.3s background-color 0.3s;
+  border-radius: 7px;
+  background-color: #797a7b;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border:none
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(227,222,222);
+  font-size: 15px;
+outline: none;
+font-weight: 600;
+color: #8D8E8f;
+padding: 2% 1% 2% 7%;
+width: 70%;
+border: 1px solid #808080;
+margin: 2% auto;
+border-radius: 7px;
+background: rgb(227,222,222);
+back-shadow; 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+font-family: 'Raleway', sans-serif;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  font-size: 15px;
+	outline: none;
+	font-weight: 600;
+	color: #8D6E8F;
+	padding: 2% 1% 2% 7%;
+	width: 80%;
+	border: 1px solid #090B0D;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 2px solid #090B0D;
+	margin: 10px 1em;
+	border-radius:7px;
+	background: #13161B;
+	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	font-family: 'Raleway', sans-serif;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  
+  width: 100%;
+  font-size: 15px;
+	outline: none;
+	font-weight: 600;
+  color: white;
+	padding: 2% 1% 2% 7%;
+	width: 60%;
+	border: 1px solid #090B0D;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 1px solid #090B0D;
+	margin: 10px 1em;
+	border-radius:7px;
+	background: #797a7b;
+	box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
+	font-family: 'Raleway', sans-serif;
+
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  width: 100%;
+  font-size: 15px;
+	outline: none;
+	font-weight: 600;
+  color: white;
+	padding: 2% 1% 2% 7%;
+	width: 60%;
+	border: 1px solid #090B0D;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 1px solid #090B0D;
+	margin: 10px 1em;
+	border-radius:7px;
+	background: #797a7b;
+	box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  color: #000;
+  background-color: #8D8E8f;
+  box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+}
+/*********************
+ contact form pop up end
+ ****************************/

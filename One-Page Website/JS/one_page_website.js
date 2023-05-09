@@ -50,5 +50,12 @@ function validateForm() {
     return false;
   }
 }
+// open form on bottom of window
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
-
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+// end open form on bottom of window
