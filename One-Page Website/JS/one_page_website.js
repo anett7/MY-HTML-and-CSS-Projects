@@ -45,7 +45,7 @@ function validateForm() {
   let y = document.forms["myForm"]["sname"].value;
   let z = document.forms["myForm"]["mail"].value;
   let v = document.forms["myForm"]["tel"].value;
-  if (x == "", y == "", z=="", v=="") {
+  if (x == ""|| y == ""|| z==""|| v=="") {
     alert("Please fill out the form before submitting!");
     return false;
   }
