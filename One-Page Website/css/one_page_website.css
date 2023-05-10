@@ -175,8 +175,8 @@ HOME SECTION STYLES
 	width: 100%;
 	display: block;
 	height: auto;
-	padding-top: 350px;/* this is spacer before the Main title Logo*/
-	padding-bottom: 500px; /* this is spacer after the main title logo*/
+	padding-top: 50px;/* this is spacer before the Main title Logo*/
+	padding-bottom: 300px; /* this is spacer after the main title logo*/
 	color: #fff;
 	
 /*think of each element, like <div>, as a box. The line for the box is the Border, the Padding is the space outside the box,
@@ -200,6 +200,9 @@ background-repeat: no-repeat 50% 50%;
 	font-weight: 900;
 	border: 5px double #fff;
 	padding: 10px;
+  background: red;
+  position: relative;
+  animation: mymove 7s infinite;
 }
 
 .head-sub-main {
@@ -521,7 +524,7 @@ MEDIA QUERIES
 /*********************
  contact form pop up start
  ****************************/
-{box-sizing: border-box;}
+
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
@@ -646,3 +649,21 @@ MEDIA QUERIES
  .blackOverride {
   color:#090B0D;
  }
+
+ /********
+ animation of .head-main: see above active
+
+ .head-main {
+  background: red;
+  position: relative;
+  animation: mymove 7s infinite;
+}
+ ***************/
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 70px;}
+}
+
+/***********
+end of animation
+************/
