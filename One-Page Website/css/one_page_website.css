@@ -569,17 +569,16 @@ MEDIA QUERIES
   padding: 10px;
   background-color: rgb(227,222,222);
   font-size: 15px;
-outline: none;
-font-weight: 600;
-color: #8D8E8f;
-padding: 2% 1% 2% 7%;
-width: 70%;
-border: 1px solid #808080;
-margin: 2% auto;
-border-radius: 7px;
-background: rgb(227,222,222);
-back-shadow; 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
-font-family: 'Raleway', sans-serif;
+  outline: none;
+  font-weight: 600;
+  color: #8D8E8f;
+  width: 70%;
+  border: 1px solid #808080;
+  margin: 2% auto;
+  border-radius: 7px;
+  background: rgb(227,222,222);
+  box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Full-width input fields */
@@ -622,7 +621,7 @@ font-family: 'Raleway', sans-serif;
 	border-right: 2px solid #424549;
 	border-bottom: 2px solid #424549;
 	border-left: 1px solid #090B0D;
-	margin: 10px 1em;
+	margin: 10px 3em;
 	border-radius:7px;
 	background: #797a7b;
 	box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
@@ -631,25 +630,7 @@ font-family: 'Raleway', sans-serif;
 
 }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  width: 100%;
-  font-size: 15px;
-	outline: none;
-	font-weight: 600;
-  color: white;
-	padding: 2% 1% 2% 7%;
-	width: 60%;
-	border: 1px solid #090B0D;
-	border-right: 2px solid #424549;
-	border-bottom: 2px solid #424549;
-	border-left: 1px solid #090B0D;
-	margin: 10px 1em;
-	border-radius:7px;
-	background: #797a7b;
-	box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
-	font-family: 'Raleway', sans-serif;
-}
+
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
@@ -661,3 +642,7 @@ font-family: 'Raleway', sans-serif;
 /*********************
  contact form pop up end
  ****************************/
+
+ .blackOverride {
+  color:#090B0D;
+ }
