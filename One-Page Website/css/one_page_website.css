@@ -60,7 +60,7 @@ h1:after { /*this is the red underline*/
     width: 150px;
     background: #e91c1c;
     margin: 5px auto 40px;
-    box shadow: 5px 2px 3px rgba(0,0,0,0.5);
+    box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
 
 }
 
@@ -125,9 +125,9 @@ section {
     margin-left: -15px;
 }
 
-.clearfix:after;
-.container:after;
-.navbar:after {
+.clearfix::after
+.container::after
+.navbar::after {
     clear: both;
     display: table;
     content: " ";
@@ -202,7 +202,7 @@ background-repeat: no-repeat 50% 50%;
 	padding: 10px;
   background: red;
   position: relative;
-  animation: mymove 7s infinite;
+  animation: mymove 3s infinite ease-in-out;
 }
 
 .head-sub-main {
@@ -292,7 +292,7 @@ border: 1px solid #808080;
 margin: 2% auto;
 border-radius: 7px;
 background: rgb(227,222,222);
-back-shadow; 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
 font-family: 'Raleway', sans-serif;
 }
 
@@ -529,7 +529,6 @@ MEDIA QUERIES
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   color: white; 
-  position: fixed;
   bottom: 23px;
   right: 28px;
   opacity: 0.8;
@@ -547,6 +546,8 @@ MEDIA QUERIES
   font-weight: 900;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  position: fixed;
+
 }
 
 
@@ -562,7 +563,7 @@ MEDIA QUERIES
   position: fixed;
   bottom: 0;
   right: 15px;
-  border:none
+  border:none;
   z-index: 9;
 }
 
@@ -656,11 +657,11 @@ MEDIA QUERIES
  .head-main {
   background: red;
   position: relative;
-  animation: mymove 7s infinite;
+  animation: mymove 5s infinite ease-in-out;
 }
  ***************/
 @keyframes mymove {
-  from {top: 0px;}
+  from {top: -170px;}
   to {top: 70px;}
 }
 
