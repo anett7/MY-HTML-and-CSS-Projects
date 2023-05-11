@@ -202,7 +202,7 @@ background-repeat: no-repeat 50% 50%;
 	padding: 10px;
   background: red;
   position: relative;
-  animation: mymove 3s infinite ease-in-out;
+  animation: mymove 3s 1 ease-in-out;
 }
 
 .head-sub-main {
@@ -546,9 +546,10 @@ MEDIA QUERIES
   font-weight: 900;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  position: fixed;
-
+  background: red;
+ position:fixed;
 }
+
 
 
 
@@ -583,6 +584,7 @@ MEDIA QUERIES
   background: rgb(227,222,222);
   box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
   font-family: 'Raleway', sans-serif;
+ 
 }
 
 /* Full-width input fields */
@@ -650,21 +652,61 @@ MEDIA QUERIES
  .blackOverride {
   color:#090B0D;
  }
-
- /********
- animation of .head-main: see above active
+/*******************
+ head main animation Welcome...
+*****************************/
+ /*
+ animation of .head-main: see above active at:
 
  .head-main {
   background: red;
   position: relative;
   animation: mymove 5s infinite ease-in-out;
 }
- ***************/
+ */
 @keyframes mymove {
   from {top: -170px;}
-  to {top: 70px;}
+  to {top: 0px;}
 }
 
-/***********
-end of animation
-************/
+/*******************
+end of head main animation
+*****************************/
+/************
+smoot scroll
+*************/
+{
+  scroll-behavior: smooth;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+/******************
+end of smoot scroll
+*******************/
+
+
+/******************
+testimonials
+*******************/
+#slideshow { 
+  margin: 50px auto; 
+  position: relative; 
+  width: 240px; 
+  height: 240px; 
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+/******************
+end of testimonials
+*******************/
