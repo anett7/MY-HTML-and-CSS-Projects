@@ -175,8 +175,8 @@ HOME SECTION STYLES
 	width: 100%;
 	display: block;
 	height: auto;
-	padding-top: 50px;/* this is spacer before the Main title Logo*/
-	padding-bottom: 300px; /* this is spacer after the main title logo*/
+	padding-top: 70px;/* this is spacer before the Main title Logo*/
+	padding-bottom: 270px; /* this is spacer after the main title logo*/
 	color: #fff;
 	
 /*think of each element, like <div>, as a box. The line for the box is the Border, the Padding is the space outside the box,
@@ -204,7 +204,7 @@ background-repeat: no-repeat 50% 50%;
   position: relative;
   animation: mymove 3s 1 ease-in-out;
 }
-
+/*
 .head-sub-main {
 	font-size: 23px;
 	font-weight: 500;

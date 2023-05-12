@@ -72,7 +72,7 @@ setInterval(function() {
   .fadeIn(1000)
   .end()
   .appendTo('#slideshow');
-}, 3000);
+}, 4000);
 
-
+//To modify the time each slide shows, change the final number listed in the setInterval(function() (currently set at 3000).
 //end of testimonials
